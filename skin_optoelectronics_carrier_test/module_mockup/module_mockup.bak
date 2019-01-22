@@ -1,0 +1,514 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+5V #PWR0101
+U 1 1 5C1A5F46
+P 9050 1050
+F 0 "#PWR0101" H 9050 900 50  0001 C CNN
+F 1 "+5V" H 9065 1223 50  0000 C CNN
+F 2 "" H 9050 1050 50  0001 C CNN
+F 3 "" H 9050 1050 50  0001 C CNN
+	1    9050 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0102
+U 1 1 5C1A5F58
+P 2900 2100
+F 0 "#PWR0102" H 2900 1950 50  0001 C CNN
+F 1 "+5V" H 2915 2273 50  0000 C CNN
+F 2 "" H 2900 2100 50  0001 C CNN
+F 3 "" H 2900 2100 50  0001 C CNN
+	1    2900 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5C1A5FB2
+P 9400 1200
+F 0 "#PWR0103" H 9400 950 50  0001 C CNN
+F 1 "GND" H 9405 1027 50  0000 C CNN
+F 2 "" H 9400 1200 50  0001 C CNN
+F 3 "" H 9400 1200 50  0001 C CNN
+	1    9400 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5C1A601E
+P 9050 1200
+F 0 "#FLG0101" H 9050 1275 50  0001 C CNN
+F 1 "PWR_FLAG" H 9050 1373 50  0000 C CNN
+F 2 "" H 9050 1200 50  0001 C CNN
+F 3 "~" H 9050 1200 50  0001 C CNN
+	1    9050 1200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5C1A6030
+P 9400 1050
+F 0 "#FLG0102" H 9400 1125 50  0001 C CNN
+F 1 "PWR_FLAG" H 9400 1224 50  0000 C CNN
+F 2 "" H 9400 1050 50  0001 C CNN
+F 3 "~" H 9400 1050 50  0001 C CNN
+	1    9400 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 1200 9400 1050
+Wire Wire Line
+	9050 1050 9050 1200
+$Comp
+L Device:LED D1
+U 1 1 5C1A6090
+P 3200 2600
+F 0 "D1" V 3238 2483 50  0000 R CNN
+F 1 "LED" V 3147 2483 50  0000 R CNN
+F 2 "Roboy_mod:Everlight_3x2x1_side_lens_wide_LED" H 3200 2600 50  0001 C CNN
+F 3 "~" H 3200 2600 50  0001 C CNN
+	1    3200 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Q_Photo_NPN Q1
+U 1 1 5C1A617A
+P 4800 2600
+F 0 "Q1" H 4990 2646 50  0000 L CNN
+F 1 "Q_Photo_NPN" H 4990 2555 50  0000 L CNN
+F 2 "Roboy_mod:Everlight_3x2x1_side_lens_wide_Phototransistor" H 5000 2700 50  0001 C CNN
+F 3 "~" H 4800 2600 50  0001 C CNN
+	1    4800 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5C1A6309
+P 3550 2600
+F 0 "D2" V 3588 2483 50  0000 R CNN
+F 1 "LED" V 3497 2483 50  0000 R CNN
+F 2 "Roboy_mod:Everlight_3x2x1_side_lens_wide_LED" H 3550 2600 50  0001 C CNN
+F 3 "~" H 3550 2600 50  0001 C CNN
+	1    3550 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5C1A6329
+P 3900 2600
+F 0 "D3" V 3938 2483 50  0000 R CNN
+F 1 "LED" V 3847 2483 50  0000 R CNN
+F 2 "Roboy_mod:Everlight_3x2x1_side_lens_wide_LED" H 3900 2600 50  0001 C CNN
+F 3 "~" H 3900 2600 50  0001 C CNN
+	1    3900 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Q_Photo_NPN Q2
+U 1 1 5C1A6441
+P 5600 2600
+F 0 "Q2" H 5790 2646 50  0000 L CNN
+F 1 "Q_Photo_NPN" H 5790 2555 50  0000 L CNN
+F 2 "Roboy_mod:Everlight_3x2x1_side_lens_wide_Phototransistor" H 5800 2700 50  0001 C CNN
+F 3 "~" H 5600 2600 50  0001 C CNN
+	1    5600 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_Photo_NPN Q3
+U 1 1 5C1A6477
+P 6400 2600
+F 0 "Q3" H 6590 2646 50  0000 L CNN
+F 1 "Q_Photo_NPN" H 6590 2555 50  0000 L CNN
+F 2 "Roboy_mod:Everlight_3x2x1_side_lens_wide_Phototransistor" H 6600 2700 50  0001 C CNN
+F 3 "~" H 6400 2600 50  0001 C CNN
+	1    6400 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 2100 2900 2350
+Wire Wire Line
+	2900 2350 3200 2350
+Wire Wire Line
+	3200 2350 3200 2450
+Wire Wire Line
+	3200 2350 3550 2350
+Wire Wire Line
+	3550 2350 3550 2450
+Connection ~ 3200 2350
+Wire Wire Line
+	3550 2350 3900 2350
+Wire Wire Line
+	3900 2350 3900 2450
+Connection ~ 3550 2350
+Wire Wire Line
+	4900 2350 4900 2400
+Wire Wire Line
+	4900 2350 5700 2350
+Wire Wire Line
+	5700 2350 5700 2400
+Wire Wire Line
+	5700 2350 6500 2350
+Wire Wire Line
+	6500 2350 6500 2400
+Connection ~ 5700 2350
+Wire Wire Line
+	3200 3150 3200 2750
+Wire Wire Line
+	3550 3150 3550 2750
+Wire Wire Line
+	3900 3150 3900 2750
+Wire Wire Line
+	4900 3150 4900 2800
+Wire Wire Line
+	5700 3150 5700 2800
+Wire Wire Line
+	6500 3150 6500 2800
+$Comp
+L Connector:Conn_01x10_Female J2
+U 1 1 5C4227D2
+P 9950 2800
+F 0 "J2" H 9977 2776 50  0000 L CNN
+F 1 "Conn_01x10_Female" H 9977 2685 50  0000 L CNN
+F 2 "Roboy_mod:FPC_0.5mmx10" H 9950 2800 50  0001 C CNN
+F 3 "~" H 9950 2800 50  0001 C CNN
+	1    9950 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x10_Male J1
+U 1 1 5C422A2E
+P 8950 2800
+F 0 "J1" H 9056 3378 50  0000 C CNN
+F 1 "Conn_01x10_Male" H 9056 3287 50  0000 C CNN
+F 2 "Roboy_mod:FPC_0.5mmx10" H 8950 2800 50  0001 C CNN
+F 3 "~" H 8950 2800 50  0001 C CNN
+	1    8950 2800
+	1    0    0    -1  
+$EndComp
+Connection ~ 4900 2350
+Connection ~ 3900 2350
+Wire Wire Line
+	3900 2350 4900 2350
+$Comp
+L Connector:Conn_01x10_Female J4
+U 1 1 5C423BD3
+P 9950 3900
+F 0 "J4" H 9977 3876 50  0000 L CNN
+F 1 "Conn_01x10_Female" H 9977 3785 50  0000 L CNN
+F 2 "Roboy_mod:FPC_0.5mmx10" H 9950 3900 50  0001 C CNN
+F 3 "~" H 9950 3900 50  0001 C CNN
+	1    9950 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x10_Female J6
+U 1 1 5C423FAC
+P 9950 5050
+F 0 "J6" H 9977 5026 50  0000 L CNN
+F 1 "Conn_01x10_Female" H 9977 4935 50  0000 L CNN
+F 2 "Roboy_mod:FPC_0.5mmx10" H 9950 5050 50  0001 C CNN
+F 3 "~" H 9950 5050 50  0001 C CNN
+	1    9950 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x10_Male J3
+U 1 1 5C423FFA
+P 8950 3900
+F 0 "J3" H 9056 4478 50  0000 C CNN
+F 1 "Conn_01x10_Male" H 9056 4387 50  0000 C CNN
+F 2 "Roboy_mod:FPC_0.5mmx10" H 8950 3900 50  0001 C CNN
+F 3 "~" H 8950 3900 50  0001 C CNN
+	1    8950 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x10_Male J5
+U 1 1 5C424054
+P 8950 5050
+F 0 "J5" H 9056 5628 50  0000 C CNN
+F 1 "Conn_01x10_Male" H 9056 5537 50  0000 C CNN
+F 2 "Roboy_mod:FPC_0.5mmx10" H 8950 5050 50  0001 C CNN
+F 3 "~" H 8950 5050 50  0001 C CNN
+	1    8950 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0104
+U 1 1 5C425D92
+P 9600 2300
+F 0 "#PWR0104" H 9600 2150 50  0001 C CNN
+F 1 "+5V" H 9615 2473 50  0000 C CNN
+F 2 "" H 9600 2300 50  0001 C CNN
+F 3 "" H 9600 2300 50  0001 C CNN
+	1    9600 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0105
+U 1 1 5C425DB5
+P 9600 3350
+F 0 "#PWR0105" H 9600 3200 50  0001 C CNN
+F 1 "+5V" H 9615 3523 50  0000 C CNN
+F 2 "" H 9600 3350 50  0001 C CNN
+F 3 "" H 9600 3350 50  0001 C CNN
+	1    9600 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0106
+U 1 1 5C425DD8
+P 9600 4500
+F 0 "#PWR0106" H 9600 4350 50  0001 C CNN
+F 1 "+5V" H 9615 4673 50  0000 C CNN
+F 2 "" H 9600 4500 50  0001 C CNN
+F 3 "" H 9600 4500 50  0001 C CNN
+	1    9600 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 2300 9600 2400
+Wire Wire Line
+	9600 2400 9750 2400
+Wire Wire Line
+	9600 3350 9600 3500
+Wire Wire Line
+	9600 3500 9750 3500
+Wire Wire Line
+	9600 4500 9600 4650
+Wire Wire Line
+	9600 4650 9750 4650
+Text Label 3200 3150 0    50   ~ 0
+D1
+Text Label 3550 3150 0    50   ~ 0
+D2
+Text Label 3900 3150 0    50   ~ 0
+D3
+Text Label 4900 3150 0    50   ~ 0
+Q1
+Text Label 5700 3150 0    50   ~ 0
+Q2
+Text Label 6500 3150 0    50   ~ 0
+Q3
+Text Label 9300 3200 0    50   ~ 0
+D1
+Text Label 9300 3300 0    50   ~ 0
+Q1
+Text Label 9300 4100 0    50   ~ 0
+D2
+Text Label 9300 4200 0    50   ~ 0
+Q2
+Text Label 9300 4300 0    50   ~ 0
+D1
+Text Label 9300 4400 0    50   ~ 0
+Q1
+Text Label 9300 5050 0    50   ~ 0
+D3
+Text Label 9300 5150 0    50   ~ 0
+Q3
+Text Label 9300 5250 0    50   ~ 0
+D2
+Text Label 9300 5450 0    50   ~ 0
+D1
+Text Label 9300 5550 0    50   ~ 0
+Q1
+Text Label 9300 5350 0    50   ~ 0
+Q2
+Wire Wire Line
+	9150 3200 9750 3200
+Wire Wire Line
+	9150 3300 9750 3300
+Wire Wire Line
+	9150 4100 9750 4100
+Wire Wire Line
+	9150 4200 9750 4200
+Wire Wire Line
+	9150 4300 9750 4300
+Wire Wire Line
+	9150 4400 9750 4400
+Wire Wire Line
+	9150 5050 9750 5050
+Wire Wire Line
+	9150 5150 9750 5150
+Wire Wire Line
+	9150 5250 9750 5250
+Wire Wire Line
+	9150 5350 9750 5350
+Wire Wire Line
+	9150 5450 9750 5450
+Wire Wire Line
+	9150 5550 9750 5550
+NoConn ~ 9150 2500
+NoConn ~ 9150 2600
+NoConn ~ 9150 2700
+NoConn ~ 9150 2800
+NoConn ~ 9150 2900
+NoConn ~ 9150 3000
+NoConn ~ 9150 3100
+NoConn ~ 9750 3100
+NoConn ~ 9750 3000
+NoConn ~ 9750 2900
+NoConn ~ 9750 2800
+NoConn ~ 9750 2700
+NoConn ~ 9750 2600
+NoConn ~ 9750 2500
+NoConn ~ 9750 3600
+NoConn ~ 9750 3700
+NoConn ~ 9750 3800
+NoConn ~ 9750 3900
+NoConn ~ 9750 4000
+NoConn ~ 9150 4000
+NoConn ~ 9150 3900
+NoConn ~ 9150 3800
+NoConn ~ 9150 3700
+NoConn ~ 9150 3600
+NoConn ~ 9150 4750
+NoConn ~ 9150 4850
+NoConn ~ 9150 4950
+NoConn ~ 9750 4950
+NoConn ~ 9750 4850
+NoConn ~ 9750 4750
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5C43F8B0
+P 9300 2500
+F 0 "TP1" H 9242 2527 50  0000 R CNN
+F 1 "TestPoint" H 9242 2618 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 9500 2500 50  0001 C CNN
+F 3 "~" H 9500 2500 50  0001 C CNN
+	1    9300 2500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5C43F97C
+P 9600 2500
+F 0 "TP4" H 9542 2527 50  0000 R CNN
+F 1 "TestPoint" H 9542 2618 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 9800 2500 50  0001 C CNN
+F 3 "~" H 9800 2500 50  0001 C CNN
+	1    9600 2500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0107
+U 1 1 5C43FA0A
+P 9300 2300
+F 0 "#PWR0107" H 9300 2150 50  0001 C CNN
+F 1 "+5V" H 9315 2473 50  0000 C CNN
+F 2 "" H 9300 2300 50  0001 C CNN
+F 3 "" H 9300 2300 50  0001 C CNN
+	1    9300 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 2400 9300 2400
+Wire Wire Line
+	9300 2400 9300 2300
+Wire Wire Line
+	9300 2400 9300 2500
+Connection ~ 9300 2400
+Wire Wire Line
+	9600 2500 9600 2400
+Connection ~ 9600 2400
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5C44170B
+P 9600 3600
+F 0 "TP5" H 9542 3627 50  0000 R CNN
+F 1 "TestPoint" H 9542 3718 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 9800 3600 50  0001 C CNN
+F 3 "~" H 9800 3600 50  0001 C CNN
+	1    9600 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0108
+U 1 1 5C441775
+P 9300 3350
+F 0 "#PWR0108" H 9300 3200 50  0001 C CNN
+F 1 "+5V" H 9315 3523 50  0000 C CNN
+F 2 "" H 9300 3350 50  0001 C CNN
+F 3 "" H 9300 3350 50  0001 C CNN
+	1    9300 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5C44179E
+P 9300 3600
+F 0 "TP2" H 9242 3627 50  0000 R CNN
+F 1 "TestPoint" H 9242 3718 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 9500 3600 50  0001 C CNN
+F 3 "~" H 9500 3600 50  0001 C CNN
+	1    9300 3600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9150 3500 9300 3500
+Wire Wire Line
+	9300 3500 9300 3350
+Wire Wire Line
+	9300 3500 9300 3600
+Connection ~ 9300 3500
+Wire Wire Line
+	9600 3600 9600 3500
+Connection ~ 9600 3500
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5C443396
+P 9600 4750
+F 0 "TP6" H 9542 4777 50  0000 R CNN
+F 1 "TestPoint" H 9542 4868 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 9800 4750 50  0001 C CNN
+F 3 "~" H 9800 4750 50  0001 C CNN
+	1    9600 4750
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0109
+U 1 1 5C443B88
+P 9300 4500
+F 0 "#PWR0109" H 9300 4350 50  0001 C CNN
+F 1 "+5V" H 9315 4673 50  0000 C CNN
+F 2 "" H 9300 4500 50  0001 C CNN
+F 3 "" H 9300 4500 50  0001 C CNN
+	1    9300 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5C443BB5
+P 9300 4750
+F 0 "TP3" H 9242 4777 50  0000 R CNN
+F 1 "TestPoint" H 9242 4868 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 9500 4750 50  0001 C CNN
+F 3 "~" H 9500 4750 50  0001 C CNN
+	1    9300 4750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9150 4650 9300 4650
+Wire Wire Line
+	9300 4650 9300 4500
+Wire Wire Line
+	9300 4650 9300 4750
+Connection ~ 9300 4650
+Wire Wire Line
+	9600 4750 9600 4650
+Connection ~ 9600 4650
+$EndSCHEMATC

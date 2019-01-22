@@ -1,0 +1,928 @@
+EESchema Schematic File Version 4
+LIBS:skin_optoelectronics_module-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Q_Photo_NPN Q?
+U 1 1 5C148BED
+P 1700 3350
+AR Path="/5C14A5EC/5C148BED" Ref="Q?"  Part="1" 
+AR Path="/5C14866E/5C148BED" Ref="Q2"  Part="1" 
+F 0 "Q2" H 1522 3396 50  0000 R CNN
+F 1 "Q_Photo_NPN" H 1522 3305 50  0000 R CNN
+F 2 "Roboy_mod:Everlight_3x2x1_side_lens_wide_Phototransistor" H 1900 3450 50  0001 C CNN
+F 3 "~" H 1700 3350 50  0001 C CNN
+	1    1700 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C148BF4
+P 1800 3900
+AR Path="/5C14A5EC/5C148BF4" Ref="R?"  Part="1" 
+AR Path="/5C14866E/5C148BF4" Ref="R6"  Part="1" 
+F 0 "R6" H 1870 3946 50  0000 L CNN
+F 1 "10k" H 1870 3855 50  0000 L CNN
+F 2 "Roboy_mod:The_0402_FP" V 1730 3900 50  0001 C CNN
+F 3 "~" H 1800 3900 50  0001 C CNN
+	1    1800 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5C148BFB
+P 4350 3150
+AR Path="/5C14A5EC/5C148BFB" Ref="C?"  Part="1" 
+AR Path="/5C14866E/5C148BFB" Ref="C11"  Part="1" 
+F 0 "C11" H 4442 3196 50  0000 L CNN
+F 1 "100n" H 4442 3105 50  0000 L CNN
+F 2 "Roboy_mod:The_0402_FP" H 4350 3150 50  0001 C CNN
+F 3 "~" H 4350 3150 50  0001 C CNN
+	1    4350 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C148C02
+P 4200 4100
+AR Path="/5C14A5EC/5C148C02" Ref="C?"  Part="1" 
+AR Path="/5C14866E/5C148C02" Ref="C10"  Part="1" 
+F 0 "C10" H 4315 4146 50  0000 L CNN
+F 1 "100p" H 4315 4055 50  0000 L CNN
+F 2 "Roboy_mod:The_0402_FP" H 4238 3950 50  0001 C CNN
+F 3 "~" H 4200 4100 50  0001 C CNN
+	1    4200 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead FB?
+U 1 1 5C148C09
+P 8300 3600
+AR Path="/5C14A5EC/5C148C09" Ref="FB?"  Part="1" 
+AR Path="/5C14866E/5C148C09" Ref="FB2"  Part="1" 
+F 0 "FB2" V 8026 3600 50  0000 C CNN
+F 1 "Ferrite_Bead" V 8117 3600 50  0000 C CNN
+F 2 "Roboy_mod:The_0402_FP" V 8230 3600 50  0001 C CNN
+F 3 "~" H 8300 3600 50  0001 C CNN
+	1    8300 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Amplifier_Operational:OPA340NA U?
+U 1 1 5C148C17
+P 3000 3750
+AR Path="/5C14A5EC/5C148C17" Ref="U?"  Part="1" 
+AR Path="/5C14866E/5C148C17" Ref="U8"  Part="1" 
+F 0 "U8" H 3000 3950 50  0000 L CNN
+F 1 "OPA340NA" H 3000 3550 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 2900 3550 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/opa340.pdf" H 3000 3950 50  0001 C CNN
+	1    3000 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L custom:MIC5317-3.3YMT-TZ U?
+U 1 1 5C148C1E
+P 2400 1900
+AR Path="/5C14A5EC/5C148C1E" Ref="U?"  Part="1" 
+AR Path="/5C14866E/5C148C1E" Ref="U7"  Part="1" 
+F 0 "U7" H 2400 2265 50  0000 C CNN
+F 1 "MIC5317-3.3YMT-TZ" H 2400 2174 50  0000 C CNN
+F 2 "Roboy_mod:4-DFN" H 2350 1900 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MIC5317.pdf" H 2350 1900 50  0001 C CNN
+	1    2400 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5C148C25
+P 1650 1700
+AR Path="/5C14A5EC/5C148C25" Ref="#PWR?"  Part="1" 
+AR Path="/5C14866E/5C148C25" Ref="#PWR0115"  Part="1" 
+F 0 "#PWR0115" H 1650 1550 50  0001 C CNN
+F 1 "+5V" H 1665 1873 50  0000 C CNN
+F 2 "" H 1650 1700 50  0001 C CNN
+F 3 "" H 1650 1700 50  0001 C CNN
+	1    1650 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5C148C2B
+P 1650 1900
+AR Path="/5C14A5EC/5C148C2B" Ref="C?"  Part="1" 
+AR Path="/5C14866E/5C148C2B" Ref="C7"  Part="1" 
+F 0 "C7" H 1559 1946 50  0000 R CNN
+F 1 "1u" H 1559 1855 50  0000 R CNN
+F 2 "Roboy_mod:The_0402_FP" H 1650 1900 50  0001 C CNN
+F 3 "~" H 1650 1900 50  0001 C CNN
+	1    1650 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 1700 1650 1800
+Wire Wire Line
+	1650 1800 1900 1800
+Connection ~ 1650 1800
+Wire Wire Line
+	1650 2000 1650 2150
+Wire Wire Line
+	1950 2000 1650 2000
+Connection ~ 1650 2000
+Text Label 3400 1800 2    50   ~ 0
+AVDD
+Wire Wire Line
+	3400 1800 3100 1800
+Wire Wire Line
+	2850 2000 2950 2000
+Wire Wire Line
+	2950 2000 2950 1400
+Wire Wire Line
+	2950 1400 1900 1400
+Wire Wire Line
+	1900 1400 1900 1800
+Connection ~ 1900 1800
+Wire Wire Line
+	1900 1800 1950 1800
+$Comp
+L Device:C_Small C?
+U 1 1 5C148C40
+P 3100 2000
+AR Path="/5C14A5EC/5C148C40" Ref="C?"  Part="1" 
+AR Path="/5C14866E/5C148C40" Ref="C9"  Part="1" 
+F 0 "C9" H 3192 2046 50  0000 L CNN
+F 1 "1u" H 3192 1955 50  0000 L CNN
+F 2 "Roboy_mod:The_0402_FP" H 3100 2000 50  0001 C CNN
+F 3 "~" H 3100 2000 50  0001 C CNN
+	1    3100 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 1900 3100 1800
+Connection ~ 3100 1800
+Wire Wire Line
+	3100 1800 2850 1800
+Wire Wire Line
+	3100 2100 3100 2350
+Text Label 950  2900 2    50   ~ 0
+AVDD
+Wire Wire Line
+	1800 2900 1800 3150
+Wire Wire Line
+	2900 3450 2900 2900
+Connection ~ 1800 2900
+Wire Wire Line
+	1800 2900 2900 2900
+$Comp
+L power:GND #PWR?
+U 1 1 5C148C52
+P 1650 2400
+AR Path="/5C14A5EC/5C148C52" Ref="#PWR?"  Part="1" 
+AR Path="/5C14866E/5C148C52" Ref="#PWR0116"  Part="1" 
+F 0 "#PWR0116" H 1650 2150 50  0001 C CNN
+F 1 "GND" H 1655 2227 50  0000 C CNN
+F 2 "" H 1650 2400 50  0001 C CNN
+F 3 "" H 1650 2400 50  0001 C CNN
+	1    1650 2400
+	1    0    0    -1  
+$EndComp
+Connection ~ 1650 2150
+Wire Wire Line
+	1650 2150 1950 2150
+Wire Wire Line
+	2900 4400 2900 4300
+Wire Wire Line
+	1800 4300 2350 4300
+Connection ~ 2900 4300
+Wire Wire Line
+	2900 4300 2900 4050
+Wire Wire Line
+	2700 3850 2600 3850
+$Comp
+L Device:R R?
+U 1 1 5C148C69
+P 3750 3750
+AR Path="/5C14A5EC/5C148C69" Ref="R?"  Part="1" 
+AR Path="/5C14866E/5C148C69" Ref="R9"  Part="1" 
+F 0 "R9" V 3543 3750 50  0000 C CNN
+F 1 "1k" V 3634 3750 50  0000 C CNN
+F 2 "Roboy_mod:The_0402_FP" V 3680 3750 50  0001 C CNN
+F 3 "~" H 3750 3750 50  0001 C CNN
+	1    3750 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3600 3750 3450 3750
+Wire Wire Line
+	3900 3750 4200 3750
+Wire Wire Line
+	4200 3750 4200 3950
+Wire Wire Line
+	4200 4250 4200 4300
+Wire Wire Line
+	4200 4300 2900 4300
+Wire Wire Line
+	2900 2900 4350 2900
+Connection ~ 2900 2900
+$Comp
+L power:GND #PWR?
+U 1 1 5C148C81
+P 5850 4800
+AR Path="/5C14A5EC/5C148C81" Ref="#PWR?"  Part="1" 
+AR Path="/5C14866E/5C148C81" Ref="#PWR0119"  Part="1" 
+F 0 "#PWR0119" H 5850 4550 50  0001 C CNN
+F 1 "GND" H 5855 4627 50  0000 C CNN
+F 2 "" H 5850 4800 50  0001 C CNN
+F 3 "" H 5850 4800 50  0001 C CNN
+	1    5850 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 3400 4350 3250
+Wire Wire Line
+	4350 3050 4350 2900
+$Comp
+L power:+5V #PWR?
+U 1 1 5C148C8B
+P 5850 2850
+AR Path="/5C14A5EC/5C148C8B" Ref="#PWR?"  Part="1" 
+AR Path="/5C14866E/5C148C8B" Ref="#PWR0120"  Part="1" 
+F 0 "#PWR0120" H 5850 2700 50  0001 C CNN
+F 1 "+5V" H 5865 3023 50  0000 C CNN
+F 2 "" H 5850 2850 50  0001 C CNN
+F 3 "" H 5850 2850 50  0001 C CNN
+	1    5850 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5C148C91
+P 6200 2950
+AR Path="/5C14A5EC/5C148C91" Ref="C?"  Part="1" 
+AR Path="/5C14866E/5C148C91" Ref="C13"  Part="1" 
+F 0 "C13" V 6429 2950 50  0000 C CNN
+F 1 "100n" V 6338 2950 50  0000 C CNN
+F 2 "Roboy_mod:The_0402_FP" H 6200 2950 50  0001 C CNN
+F 3 "~" H 6200 2950 50  0001 C CNN
+	1    6200 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C148C98
+P 6450 2950
+AR Path="/5C14A5EC/5C148C98" Ref="#PWR?"  Part="1" 
+AR Path="/5C14866E/5C148C98" Ref="#PWR0121"  Part="1" 
+F 0 "#PWR0121" H 6450 2700 50  0001 C CNN
+F 1 "GND" H 6455 2777 50  0000 C CNN
+F 2 "" H 6450 2950 50  0001 C CNN
+F 3 "" H 6450 2950 50  0001 C CNN
+	1    6450 2950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6450 2950 6400 2950
+$Comp
+L Device:R_Small R?
+U 1 1 5C148CA3
+P 6050 1850
+AR Path="/5C14A5EC/5C148CA3" Ref="R?"  Part="1" 
+AR Path="/5C14866E/5C148CA3" Ref="R10"  Part="1" 
+F 0 "R10" H 5991 1804 50  0000 R CNN
+F 1 "1k" H 5991 1895 50  0000 R CNN
+F 2 "Roboy_mod:The_0402_FP" H 6050 1850 50  0001 C CNN
+F 3 "~" H 6050 1850 50  0001 C CNN
+	1    6050 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5C148CAA
+P 6200 1350
+AR Path="/5C14A5EC/5C148CAA" Ref="#PWR?"  Part="1" 
+AR Path="/5C14866E/5C148CAA" Ref="#PWR0122"  Part="1" 
+F 0 "#PWR0122" H 6200 1200 50  0001 C CNN
+F 1 "+5V" H 6215 1523 50  0000 C CNN
+F 2 "" H 6200 1350 50  0001 C CNN
+F 3 "" H 6200 1350 50  0001 C CNN
+	1    6200 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 1850 6150 1850
+Text Label 6850 4450 2    50   ~ 0
+~CS
+Wire Wire Line
+	6850 4450 6550 4450
+Text Label 6850 4150 2    50   ~ 0
+SCLK
+Wire Wire Line
+	6850 4150 6550 4150
+Wire Wire Line
+	6850 4250 6550 4250
+$Comp
+L power:+5V #PWR?
+U 1 1 5C148CB8
+P 7900 3500
+AR Path="/5C14A5EC/5C148CB8" Ref="#PWR?"  Part="1" 
+AR Path="/5C14866E/5C148CB8" Ref="#PWR0123"  Part="1" 
+F 0 "#PWR0123" H 7900 3350 50  0001 C CNN
+F 1 "+5V" H 7915 3673 50  0000 C CNN
+F 2 "" H 7900 3500 50  0001 C CNN
+F 3 "" H 7900 3500 50  0001 C CNN
+	1    7900 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C148CBE
+P 8600 4600
+AR Path="/5C14A5EC/5C148CBE" Ref="#PWR?"  Part="1" 
+AR Path="/5C14866E/5C148CBE" Ref="#PWR0124"  Part="1" 
+F 0 "#PWR0124" H 8600 4350 50  0001 C CNN
+F 1 "GND" H 8605 4427 50  0000 C CNN
+F 2 "" H 8600 4600 50  0001 C CNN
+F 3 "" H 8600 4600 50  0001 C CNN
+	1    8600 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 4600 8600 4500
+Wire Wire Line
+	8600 4500 8800 4500
+Text Label 8550 3700 0    50   ~ 0
+DS_IN
+Text Label 8550 4300 0    50   ~ 0
+SCLK
+Text Label 8550 3900 0    50   ~ 0
+DL_IN
+Wire Wire Line
+	8550 4200 8800 4200
+Wire Wire Line
+	8550 4300 8800 4300
+Wire Wire Line
+	8550 4400 8800 4400
+Wire Wire Line
+	3450 3750 3450 4150
+Wire Wire Line
+	2600 4150 2600 3850
+Connection ~ 3450 3750
+Wire Wire Line
+	3450 3750 3300 3750
+Wire Wire Line
+	1800 4050 1800 4300
+$Comp
+L 74xGxx:74LVC1G79 U?
+U 1 1 5C148CD3
+P 4950 1950
+AR Path="/5C14A5EC/5C148CD3" Ref="U?"  Part="1" 
+AR Path="/5C14866E/5C148CD3" Ref="U9"  Part="1" 
+F 0 "U9" H 4950 2267 50  0000 C CNN
+F 1 "74LVC1G79" H 4950 2176 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 4950 1950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 4950 1950 50  0001 C CNN
+	1    4950 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C148CDA
+P 3200 4150
+AR Path="/5C14A5EC/5C148CDA" Ref="R?"  Part="1" 
+AR Path="/5C14866E/5C148CDA" Ref="R8"  Part="1" 
+F 0 "R8" V 3350 4150 50  0000 C CNN
+F 1 "optional_0" V 3450 4150 50  0000 C CNN
+F 2 "Roboy_mod:The_0402_FP" V 3130 4150 50  0001 C CNN
+F 3 "~" H 3200 4150 50  0001 C CNN
+	1    3200 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3450 4150 3350 4150
+Wire Wire Line
+	3050 4150 2600 4150
+$Comp
+L Device:R R?
+U 1 1 5C148CE3
+P 2350 4050
+AR Path="/5C14A5EC/5C148CE3" Ref="R?"  Part="1" 
+AR Path="/5C14866E/5C148CE3" Ref="R7"  Part="1" 
+F 0 "R7" H 2280 4004 50  0000 R CNN
+F 1 "optional" H 2280 4095 50  0000 R CNN
+F 2 "Roboy_mod:The_0402_FP" V 2280 4050 50  0001 C CNN
+F 3 "~" H 2350 4050 50  0001 C CNN
+	1    2350 4050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2350 3900 2350 3850
+Wire Wire Line
+	2350 3850 2600 3850
+Connection ~ 2600 3850
+Wire Wire Line
+	2350 4200 2350 4300
+Connection ~ 2350 4300
+Wire Wire Line
+	2350 4300 2900 4300
+$Comp
+L 74xGxx:74LVC1G125 U?
+U 1 1 5C148CF0
+P 5650 1850
+AR Path="/5C14A5EC/5C148CF0" Ref="U?"  Part="1" 
+AR Path="/5C14866E/5C148CF0" Ref="U10"  Part="1" 
+F 0 "U10" H 5625 1676 50  0000 C CNN
+F 1 "74LVC1G125" H 5625 1585 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 5650 1850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 5650 1850 50  0001 C CNN
+	1    5650 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 1850 5250 1850
+Wire Wire Line
+	4400 1850 4700 1850
+Text Label 8550 4200 0    50   ~ 0
+SDI
+Text Label 8550 4400 0    50   ~ 0
+SDO
+Text Label 8550 3800 0    50   ~ 0
+Clk_S
+Text Label 8550 4000 0    50   ~ 0
+Clk_L
+Wire Wire Line
+	1800 3550 1800 3650
+$Comp
+L Device:C_Small C?
+U 1 1 5C148CFE
+P 2250 3650
+AR Path="/5C14A5EC/5C148CFE" Ref="C?"  Part="1" 
+AR Path="/5C14866E/5C148CFE" Ref="C8"  Part="1" 
+F 0 "C8" V 2021 3650 50  0000 C CNN
+F 1 "optional_0" V 2112 3650 50  0000 C CNN
+F 2 "Roboy_mod:The_0402_FP" H 2250 3650 50  0001 C CNN
+F 3 "~" H 2250 3650 50  0001 C CNN
+	1    2250 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2150 3650 1800 3650
+Connection ~ 1800 3650
+Wire Wire Line
+	1800 3650 1800 3750
+Wire Wire Line
+	2350 3650 2700 3650
+$Comp
+L Connector:Conn_01x10_Female J?
+U 1 1 5C148D09
+P 9000 4000
+AR Path="/5C14A5EC/5C148D09" Ref="J?"  Part="1" 
+AR Path="/5C14866E/5C148D09" Ref="J3"  Part="1" 
+F 0 "J3" H 9027 3976 50  0000 L CNN
+F 1 "Conn_01x10_Female" H 9027 3885 50  0000 L CNN
+F 2 "Roboy_mod:FPC_0.5mmx10" H 9000 4000 50  0001 C CNN
+F 3 "~" H 9000 4000 50  0001 C CNN
+	1    9000 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 3700 8800 3700
+Wire Wire Line
+	8550 3800 8800 3800
+Wire Wire Line
+	8550 3900 8800 3900
+Wire Wire Line
+	8550 4000 8800 4000
+Text Label 6850 4250 2    50   ~ 0
+SDO
+$Comp
+L Device:LED D?
+U 1 1 5C148D15
+P 6200 1600
+AR Path="/5C14A5EC/5C148D15" Ref="D?"  Part="1" 
+AR Path="/5C14866E/5C148D15" Ref="D2"  Part="1" 
+F 0 "D2" V 6238 1483 50  0000 R CNN
+F 1 "LED" V 6147 1483 50  0000 R CNN
+F 2 "Roboy_mod:Everlight_3x2x1_side_lens_wide_LED" H 6200 1600 50  0001 C CNN
+F 3 "~" H 6200 1600 50  0001 C CNN
+	1    6200 1600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6200 1750 6200 1850
+$Comp
+L Connector:Conn_01x10_Male J?
+U 1 1 5C148D1D
+P 10000 4000
+AR Path="/5C14A5EC/5C148D1D" Ref="J?"  Part="1" 
+AR Path="/5C14866E/5C148D1D" Ref="J5"  Part="1" 
+F 0 "J5" H 9350 4100 50  0000 C CNN
+F 1 "Conn_01x10_Male" H 9650 4000 50  0000 C CNN
+F 2 "Roboy_mod:FPC_0.5mmx10" H 10000 4000 50  0001 C CNN
+F 3 "~" H 10000 4000 50  0001 C CNN
+	1    10000 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C148D2A
+P 10400 4600
+AR Path="/5C14A5EC/5C148D2A" Ref="#PWR?"  Part="1" 
+AR Path="/5C14866E/5C148D2A" Ref="#PWR0126"  Part="1" 
+F 0 "#PWR0126" H 10400 4350 50  0001 C CNN
+F 1 "GND" H 10405 4427 50  0000 C CNN
+F 2 "" H 10400 4600 50  0001 C CNN
+F 3 "" H 10400 4600 50  0001 C CNN
+	1    10400 4600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10400 4600 10400 4500
+Wire Wire Line
+	10400 4500 10200 4500
+Wire Wire Line
+	10200 3600 10400 3600
+Wire Wire Line
+	10400 3600 10400 3500
+Text Label 10450 3700 2    50   ~ 0
+DS_OUT
+Text Label 10450 4300 2    50   ~ 0
+SCLK
+Text Label 10450 3900 2    50   ~ 0
+DL_OUT
+Wire Wire Line
+	10450 4200 10200 4200
+Wire Wire Line
+	10450 4300 10200 4300
+Wire Wire Line
+	10450 4400 10200 4400
+Text Label 10450 4200 2    50   ~ 0
+SDI
+Text Label 10450 4400 2    50   ~ 0
+SDO
+Wire Wire Line
+	10450 3700 10200 3700
+Wire Wire Line
+	10450 3800 10200 3800
+Wire Wire Line
+	10450 3900 10200 3900
+Wire Wire Line
+	10450 4000 10200 4000
+$Comp
+L 74xGxx:74LVC1G79 U?
+U 1 1 5C148D40
+P 8300 2200
+AR Path="/5C14A5EC/5C148D40" Ref="U?"  Part="1" 
+AR Path="/5C14866E/5C148D40" Ref="U12"  Part="1" 
+F 0 "U12" H 8300 2517 50  0000 C CNN
+F 1 "74LVC1G79" H 8300 2426 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 8300 2200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 8300 2200 50  0001 C CNN
+	1    8300 2200
+	1    0    0    -1  
+$EndComp
+Text Label 7600 2100 0    50   ~ 0
+DS_IN
+Wire Wire Line
+	7600 2100 8050 2100
+Wire Wire Line
+	8050 2300 7600 2300
+Text Label 8950 2100 2    50   ~ 0
+~CS
+Wire Wire Line
+	8550 2100 8600 2100
+Text Label 7600 2300 0    50   ~ 0
+Clk_S
+Text Label 10450 3800 2    50   ~ 0
+Clk_S
+Text Label 10450 4000 2    50   ~ 0
+Clk_L
+Text Label 8950 2250 2    50   ~ 0
+DS_OUT
+Wire Wire Line
+	8950 2250 8600 2250
+Wire Wire Line
+	8600 2250 8600 2100
+Connection ~ 8600 2100
+Wire Wire Line
+	8600 2100 8950 2100
+Text Label 4400 2050 0    50   ~ 0
+Clk_L
+Wire Wire Line
+	4400 2050 4700 2050
+Text Label 8550 4100 0    50   ~ 0
+Blank
+Wire Wire Line
+	8550 4100 8800 4100
+Text Label 10450 4100 2    50   ~ 0
+Blank
+Wire Wire Line
+	10450 4100 10200 4100
+Text Label 5650 1550 0    50   ~ 0
+Blank
+Text Label 4400 1850 0    50   ~ 0
+DL_IN
+Text Label 5700 2250 2    50   ~ 0
+DL_OUT
+Wire Wire Line
+	5700 2250 5250 2250
+Wire Wire Line
+	5250 2250 5250 1850
+Connection ~ 5250 1850
+Wire Wire Line
+	5250 1850 5350 1850
+Wire Wire Line
+	5650 1550 5650 1650
+$Comp
+L custom:ATtiny416 U11
+U 1 1 5C15A4F5
+P 5850 3900
+F 0 "U11" H 5350 4700 50  0000 C CNN
+F 1 "ATtiny416" H 6250 3150 50  0000 C CNN
+F 2 "Package_DFN_QFN:UQFN-20-1EP_3x3mm_P0.4mm_EP1.85x1.85mm" H 5500 3850 50  0001 C CNN
+F 3 "" H 5500 3850 50  0001 C CNN
+	1    5850 3900
+	1    0    0    -1  
+$EndComp
+Text Label 6850 4350 2    50   ~ 0
+SDI
+Wire Wire Line
+	6850 4350 6550 4350
+Wire Wire Line
+	5850 4800 5850 4700
+Wire Wire Line
+	5850 2950 5850 2850
+Wire Wire Line
+	5850 2950 5950 2950
+Wire Wire Line
+	5850 2950 5850 3050
+Connection ~ 5850 2950
+$Comp
+L Connector:Conn_01x03_Female J4
+U 1 1 5C17DAF4
+P 9000 5300
+F 0 "J4" H 9027 5326 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 9027 5235 50  0000 L CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical" H 9000 5300 50  0001 C CNN
+F 3 "~" H 9000 5300 50  0001 C CNN
+	1    9000 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5C17DC43
+P 8600 5100
+AR Path="/5C14A5EC/5C17DC43" Ref="#PWR?"  Part="1" 
+AR Path="/5C14866E/5C17DC43" Ref="#PWR0127"  Part="1" 
+F 0 "#PWR0127" H 8600 4950 50  0001 C CNN
+F 1 "+5V" H 8615 5273 50  0000 C CNN
+F 2 "" H 8600 5100 50  0001 C CNN
+F 3 "" H 8600 5100 50  0001 C CNN
+	1    8600 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C17DC7C
+P 8600 5500
+AR Path="/5C14A5EC/5C17DC7C" Ref="#PWR?"  Part="1" 
+AR Path="/5C14866E/5C17DC7C" Ref="#PWR0128"  Part="1" 
+F 0 "#PWR0128" H 8600 5250 50  0001 C CNN
+F 1 "GND" H 8605 5327 50  0000 C CNN
+F 2 "" H 8600 5500 50  0001 C CNN
+F 3 "" H 8600 5500 50  0001 C CNN
+	1    8600 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 5100 8600 5200
+Wire Wire Line
+	8600 5200 8800 5200
+Wire Wire Line
+	8600 5500 8600 5400
+Wire Wire Line
+	8600 5400 8800 5400
+Text Label 8600 5300 0    50   ~ 0
+UPDI
+Wire Wire Line
+	8600 5300 8800 5300
+Text Label 4900 3450 0    50   ~ 0
+UPDI
+Wire Wire Line
+	4900 3450 5150 3450
+$Comp
+L Device:R_Small R?
+U 1 1 5C1944B4
+P 6850 3200
+AR Path="/5C14A5EC/5C1944B4" Ref="R?"  Part="1" 
+AR Path="/5C14866E/5C1944B4" Ref="R12"  Part="1" 
+F 0 "R12" H 6791 3154 50  0000 R CNN
+F 1 "1k" H 6791 3245 50  0000 R CNN
+F 2 "Roboy_mod:The_0402_FP" H 6850 3200 50  0001 C CNN
+F 3 "~" H 6850 3200 50  0001 C CNN
+	1    6850 3200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6850 3100 6850 2100
+Wire Wire Line
+	6850 2100 6200 2100
+Wire Wire Line
+	6200 2100 6200 1850
+Connection ~ 6200 1850
+Wire Wire Line
+	5150 4050 4800 4050
+Wire Wire Line
+	4800 4050 4800 2450
+$Comp
+L Device:R_Small R?
+U 1 1 5C1A3165
+P 6200 2300
+AR Path="/5C14A5EC/5C1A3165" Ref="R?"  Part="1" 
+AR Path="/5C14866E/5C1A3165" Ref="R11"  Part="1" 
+F 0 "R11" H 6141 2254 50  0000 R CNN
+F 1 "1k" H 6141 2345 50  0000 R CNN
+F 2 "Roboy_mod:The_0402_FP" H 6200 2300 50  0001 C CNN
+F 3 "~" H 6200 2300 50  0001 C CNN
+	1    6200 2300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6200 2450 6200 2400
+Wire Wire Line
+	4800 2450 6200 2450
+Wire Wire Line
+	6200 2200 6200 2100
+Connection ~ 6200 2100
+Text Label 4900 3550 0    50   ~ 0
+DS_IN
+Text Label 4900 3650 0    50   ~ 0
+Clk_S
+Wire Wire Line
+	4900 3550 5150 3550
+Wire Wire Line
+	5150 3650 4900 3650
+Text Label 6900 3850 2    50   ~ 0
+DS_OUT
+Wire Wire Line
+	6900 3850 6550 3850
+Wire Wire Line
+	4500 3850 4500 3750
+Wire Wire Line
+	4500 3750 4200 3750
+Wire Wire Line
+	4500 3850 5150 3850
+Connection ~ 4200 3750
+$Comp
+L Device:C_Small C?
+U 1 1 5C1BE61F
+P 6200 2700
+AR Path="/5C14A5EC/5C1BE61F" Ref="C?"  Part="1" 
+AR Path="/5C14866E/5C1BE61F" Ref="C12"  Part="1" 
+F 0 "C12" V 6429 2700 50  0000 C CNN
+F 1 "1u" V 6338 2700 50  0000 C CNN
+F 2 "Roboy_mod:The_0402_FP" H 6200 2700 50  0001 C CNN
+F 3 "~" H 6200 2700 50  0001 C CNN
+	1    6200 2700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6100 2700 5950 2700
+Wire Wire Line
+	5950 2700 5950 2950
+Connection ~ 5950 2950
+Wire Wire Line
+	5950 2950 6100 2950
+Wire Wire Line
+	6300 2700 6400 2700
+Wire Wire Line
+	6400 2700 6400 2950
+Connection ~ 6400 2950
+Wire Wire Line
+	6400 2950 6300 2950
+$Comp
+L power:GNDA #PWR0118
+U 1 1 5C1C1165
+P 2150 2400
+F 0 "#PWR0118" H 2150 2150 50  0001 C CNN
+F 1 "GNDA" H 2155 2227 50  0000 C CNN
+F 2 "" H 2150 2400 50  0001 C CNN
+F 3 "" H 2150 2400 50  0001 C CNN
+	1    2150 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 2400 2150 2350
+Wire Wire Line
+	2150 2350 3100 2350
+$Comp
+L power:GNDA #PWR0131
+U 1 1 5C1C549C
+P 2900 4400
+F 0 "#PWR0131" H 2900 4150 50  0001 C CNN
+F 1 "GNDA" H 2905 4227 50  0000 C CNN
+F 2 "" H 2900 4400 50  0001 C CNN
+F 3 "" H 2900 4400 50  0001 C CNN
+	1    2900 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0132
+U 1 1 5C1C54DB
+P 4350 3400
+F 0 "#PWR0132" H 4350 3150 50  0001 C CNN
+F 1 "GNDA" H 4355 3227 50  0000 C CNN
+F 2 "" H 4350 3400 50  0001 C CNN
+F 3 "" H 4350 3400 50  0001 C CNN
+	1    4350 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Net-Tie_2 NT2
+U 1 1 5C1D5C4A
+P 1900 2350
+F 0 "NT2" H 1900 2528 50  0000 C CNN
+F 1 "Net-Tie_2" H 1900 2437 50  0000 C CNN
+F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 1900 2350 50  0001 C CNN
+F 3 "~" H 1900 2350 50  0001 C CNN
+	1    1900 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 2150 1650 2350
+Wire Wire Line
+	1800 2350 1650 2350
+Connection ~ 1650 2350
+Wire Wire Line
+	1650 2350 1650 2400
+Wire Wire Line
+	2000 2350 2150 2350
+Connection ~ 2150 2350
+Wire Wire Line
+	950  2900 1800 2900
+Wire Wire Line
+	8450 3600 8650 3600
+Wire Wire Line
+	8150 3600 7900 3600
+Wire Wire Line
+	7900 3600 7900 3500
+Wire Wire Line
+	10400 3500 8650 3500
+Wire Wire Line
+	8650 3500 8650 3600
+Connection ~ 8650 3600
+Wire Wire Line
+	8650 3600 8800 3600
+Wire Wire Line
+	5950 1850 5900 1850
+Wire Wire Line
+	6200 1350 6200 1450
+$Comp
+L power:+5V #PWR?
+U 1 1 5C3F66A3
+P 10300 1500
+AR Path="/5C14A5EC/5C3F66A3" Ref="#PWR?"  Part="1" 
+AR Path="/5C14866E/5C3F66A3" Ref="#PWR0139"  Part="1" 
+F 0 "#PWR0139" H 10300 1350 50  0001 C CNN
+F 1 "+5V" H 10315 1673 50  0000 C CNN
+F 2 "" H 10300 1500 50  0001 C CNN
+F 3 "" H 10300 1500 50  0001 C CNN
+	1    10300 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0152
+U 1 1 5C3F670F
+P 10100 1500
+F 0 "#PWR0152" H 10100 1350 50  0001 C CNN
+F 1 "VCC" H 10117 1673 50  0000 C CNN
+F 2 "" H 10100 1500 50  0001 C CNN
+F 3 "" H 10100 1500 50  0001 C CNN
+	1    10100 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 1500 10300 1500
+NoConn ~ 6550 3450
+NoConn ~ 6550 3550
+NoConn ~ 6550 3950
+NoConn ~ 5150 3750
+NoConn ~ 5150 3950
+NoConn ~ 5150 4150
+Wire Wire Line
+	6850 3300 6850 3750
+Wire Wire Line
+	6850 3750 6550 3750
+NoConn ~ 6550 3650
+$EndSCHEMATC

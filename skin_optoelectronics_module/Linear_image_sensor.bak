@@ -1,0 +1,179 @@
+EESchema Schematic File Version 4
+LIBS:skin_optoelectronics_module-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+3V3 #PWR0143
+U 1 1 5C1921DC
+P 9050 1050
+F 0 "#PWR0143" H 9050 900 50  0001 C CNN
+F 1 "+3V3" H 9065 1223 50  0000 C CNN
+F 2 "" H 9050 1050 50  0001 C CNN
+F 3 "" H 9050 1050 50  0001 C CNN
+	1    9050 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5C19223D
+P 9050 1150
+F 0 "#FLG0103" H 9050 1225 50  0001 C CNN
+F 1 "PWR_FLAG" H 9050 1323 50  0000 C CNN
+F 2 "" H 9050 1150 50  0001 C CNN
+F 3 "~" H 9050 1150 50  0001 C CNN
+	1    9050 1150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9050 1150 9050 1050
+$Comp
+L custom:TSL1401CL U19
+U 1 1 5C1926D7
+P 3700 2650
+F 0 "U19" H 3700 3215 50  0000 C CNN
+F 1 "TSL1401CL" H 3700 3124 50  0000 C CNN
+F 2 "Roboy_mod:TSL1401CL" H 3700 2650 50  0001 C CNN
+F 3 "" H 3700 2650 50  0001 C CNN
+	1    3700 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0144
+U 1 1 5C1927A9
+P 2500 2250
+F 0 "#PWR0144" H 2500 2100 50  0001 C CNN
+F 1 "+3V3" H 2515 2423 50  0000 C CNN
+F 2 "" H 2500 2250 50  0001 C CNN
+F 3 "" H 2500 2250 50  0001 C CNN
+	1    2500 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C21
+U 1 1 5C1927EB
+P 2500 3000
+F 0 "C21" H 2592 3046 50  0000 L CNN
+F 1 "100n" H 2592 2955 50  0000 L CNN
+F 2 "Roboy_mod:The_0402_FP" H 2500 3000 50  0001 C CNN
+F 3 "~" H 2500 3000 50  0001 C CNN
+	1    2500 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 3250 2500 3100
+Wire Wire Line
+	2500 2900 2500 2800
+$Comp
+L power:GNDA #PWR0145
+U 1 1 5C192948
+P 2500 3250
+F 0 "#PWR0145" H 2500 3000 50  0001 C CNN
+F 1 "GNDA" H 2505 3077 50  0000 C CNN
+F 2 "" H 2500 3250 50  0001 C CNN
+F 3 "" H 2500 3250 50  0001 C CNN
+	1    2500 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0146
+U 1 1 5C19295E
+P 4300 2700
+F 0 "#PWR0146" H 4300 2450 50  0001 C CNN
+F 1 "GNDA" H 4305 2527 50  0000 C CNN
+F 2 "" H 4300 2700 50  0001 C CNN
+F 3 "" H 4300 2700 50  0001 C CNN
+	1    4300 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 2650 4300 2650
+Wire Wire Line
+	4300 2650 4300 2700
+Wire Wire Line
+	4300 2650 4300 2500
+Wire Wire Line
+	4300 2500 4050 2500
+Connection ~ 4300 2650
+Wire Wire Line
+	3350 2800 2500 2800
+Connection ~ 2500 2800
+Wire Wire Line
+	2500 2800 2500 2250
+$Comp
+L Connector:Conn_01x05_Female J9
+U 1 1 5C195BBF
+P 6100 2600
+F 0 "J9" H 6127 2626 50  0000 L CNN
+F 1 "Conn_01x05_Female" H 6127 2535 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_2x03_P1.00mm_Vertical_SMD" H 6100 2600 50  0001 C CNN
+F 3 "~" H 6100 2600 50  0001 C CNN
+	1    6100 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0147
+U 1 1 5C195C21
+P 5700 2350
+F 0 "#PWR0147" H 5700 2200 50  0001 C CNN
+F 1 "+3V3" H 5715 2523 50  0000 C CNN
+F 2 "" H 5700 2350 50  0001 C CNN
+F 3 "" H 5700 2350 50  0001 C CNN
+	1    5700 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0148
+U 1 1 5C195C34
+P 5700 2850
+F 0 "#PWR0148" H 5700 2600 50  0001 C CNN
+F 1 "GNDA" H 5705 2677 50  0000 C CNN
+F 2 "" H 5700 2850 50  0001 C CNN
+F 3 "" H 5700 2850 50  0001 C CNN
+	1    5700 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 2350 5700 2400
+Wire Wire Line
+	5700 2400 5900 2400
+Wire Wire Line
+	5700 2850 5700 2800
+Wire Wire Line
+	5700 2800 5900 2800
+Text Label 3150 2350 0    50   ~ 0
+SI
+Text Label 2950 2500 0    50   ~ 0
+LS_CLK
+Text Label 3150 2650 0    50   ~ 0
+AO
+Wire Wire Line
+	3150 2350 3350 2350
+Wire Wire Line
+	2950 2500 3350 2500
+Wire Wire Line
+	3150 2650 3350 2650
+Text Label 5700 2500 0    50   ~ 0
+SI
+Text Label 5550 2600 0    50   ~ 0
+LS_CLK
+Text Label 5700 2700 0    50   ~ 0
+AO
+Wire Wire Line
+	5700 2500 5900 2500
+Wire Wire Line
+	5550 2600 5900 2600
+Wire Wire Line
+	5700 2700 5900 2700
+$EndSCHEMATC

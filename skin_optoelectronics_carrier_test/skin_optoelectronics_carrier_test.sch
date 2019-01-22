@@ -1,0 +1,265 @@
+EESchema Schematic File Version 4
+LIBS:skin_optoelectronics_carrier_test-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+5V #PWR0101
+U 1 1 5C1A5F46
+P 9050 1050
+F 0 "#PWR0101" H 9050 900 50  0001 C CNN
+F 1 "+5V" H 9065 1223 50  0000 C CNN
+F 2 "" H 9050 1050 50  0001 C CNN
+F 3 "" H 9050 1050 50  0001 C CNN
+	1    9050 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0102
+U 1 1 5C1A5F58
+P 2900 2100
+F 0 "#PWR0102" H 2900 1950 50  0001 C CNN
+F 1 "+5V" H 2915 2273 50  0000 C CNN
+F 2 "" H 2900 2100 50  0001 C CNN
+F 3 "" H 2900 2100 50  0001 C CNN
+	1    2900 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5C1A5FB2
+P 9400 1200
+F 0 "#PWR0103" H 9400 950 50  0001 C CNN
+F 1 "GND" H 9405 1027 50  0000 C CNN
+F 2 "" H 9400 1200 50  0001 C CNN
+F 3 "" H 9400 1200 50  0001 C CNN
+	1    9400 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5C1A601E
+P 9050 1200
+F 0 "#FLG0101" H 9050 1275 50  0001 C CNN
+F 1 "PWR_FLAG" H 9050 1373 50  0000 C CNN
+F 2 "" H 9050 1200 50  0001 C CNN
+F 3 "~" H 9050 1200 50  0001 C CNN
+	1    9050 1200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5C1A6030
+P 9400 1050
+F 0 "#FLG0102" H 9400 1125 50  0001 C CNN
+F 1 "PWR_FLAG" H 9400 1224 50  0000 C CNN
+F 2 "" H 9400 1050 50  0001 C CNN
+F 3 "~" H 9400 1050 50  0001 C CNN
+	1    9400 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 1200 9400 1050
+Wire Wire Line
+	9050 1050 9050 1200
+$Comp
+L Device:LED D1
+U 1 1 5C1A6090
+P 3200 2600
+F 0 "D1" V 3238 2483 50  0000 R CNN
+F 1 "LED" V 3147 2483 50  0000 R CNN
+F 2 "Roboy_mod:Everlight_3x2x1_side_lens_wide_LED" H 3200 2600 50  0001 C CNN
+F 3 "~" H 3200 2600 50  0001 C CNN
+	1    3200 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Q_Photo_NPN Q1
+U 1 1 5C1A617A
+P 4800 2600
+F 0 "Q1" H 4990 2646 50  0000 L CNN
+F 1 "Q_Photo_NPN" H 4990 2555 50  0000 L CNN
+F 2 "Roboy_mod:Everlight_3x2x1_side_lens_wide_Phototransistor" H 5000 2700 50  0001 C CNN
+F 3 "~" H 4800 2600 50  0001 C CNN
+	1    4800 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5C1A6309
+P 3550 2600
+F 0 "D2" V 3588 2483 50  0000 R CNN
+F 1 "LED" V 3497 2483 50  0000 R CNN
+F 2 "Roboy_mod:Everlight_3x2x1_side_lens_wide_LED" H 3550 2600 50  0001 C CNN
+F 3 "~" H 3550 2600 50  0001 C CNN
+	1    3550 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5C1A6329
+P 3900 2600
+F 0 "D3" V 3938 2483 50  0000 R CNN
+F 1 "LED" V 3847 2483 50  0000 R CNN
+F 2 "Roboy_mod:Everlight_3x2x1_side_lens_wide_LED" H 3900 2600 50  0001 C CNN
+F 3 "~" H 3900 2600 50  0001 C CNN
+	1    3900 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Q_Photo_NPN Q2
+U 1 1 5C1A6441
+P 5600 2600
+F 0 "Q2" H 5790 2646 50  0000 L CNN
+F 1 "Q_Photo_NPN" H 5790 2555 50  0000 L CNN
+F 2 "Roboy_mod:Everlight_3x2x1_side_lens_wide_Phototransistor" H 5800 2700 50  0001 C CNN
+F 3 "~" H 5600 2600 50  0001 C CNN
+	1    5600 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_Photo_NPN Q3
+U 1 1 5C1A6477
+P 6400 2600
+F 0 "Q3" H 6590 2646 50  0000 L CNN
+F 1 "Q_Photo_NPN" H 6590 2555 50  0000 L CNN
+F 2 "Roboy_mod:Everlight_3x2x1_side_lens_wide_Phototransistor" H 6600 2700 50  0001 C CNN
+F 3 "~" H 6400 2600 50  0001 C CNN
+	1    6400 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 2100 2900 2350
+Wire Wire Line
+	2900 2350 3200 2350
+Wire Wire Line
+	3200 2350 3200 2450
+Wire Wire Line
+	3200 2350 3550 2350
+Wire Wire Line
+	3550 2350 3550 2450
+Connection ~ 3200 2350
+Wire Wire Line
+	3550 2350 3900 2350
+Wire Wire Line
+	3900 2350 3900 2450
+Connection ~ 3550 2350
+Wire Wire Line
+	4900 2350 4900 2400
+Wire Wire Line
+	4900 2350 5700 2350
+Wire Wire Line
+	5700 2350 5700 2400
+Connection ~ 4900 2350
+Wire Wire Line
+	5700 2350 6500 2350
+Wire Wire Line
+	6500 2350 6500 2400
+Connection ~ 5700 2350
+Connection ~ 3900 2350
+$Comp
+L Connector:Conn_01x01_Female J3
+U 1 1 5C1A7235
+P 3200 3350
+F 0 "J3" V 3047 3398 50  0000 L CNN
+F 1 "LED1" V 3138 3398 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 3200 3350 50  0001 C CNN
+F 3 "~" H 3200 3350 50  0001 C CNN
+	1    3200 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J4
+U 1 1 5C1A7294
+P 3550 3350
+F 0 "J4" V 3397 3398 50  0000 L CNN
+F 1 "LED2" V 3488 3398 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 3550 3350 50  0001 C CNN
+F 3 "~" H 3550 3350 50  0001 C CNN
+	1    3550 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J5
+U 1 1 5C1A72C0
+P 3900 3350
+F 0 "J5" V 3747 3398 50  0000 L CNN
+F 1 "LED3" V 3838 3398 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 3900 3350 50  0001 C CNN
+F 3 "~" H 3900 3350 50  0001 C CNN
+	1    3900 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J6
+U 1 1 5C1A72EE
+P 4900 3350
+F 0 "J6" V 4747 3398 50  0000 L CNN
+F 1 "PT1" V 4838 3398 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4900 3350 50  0001 C CNN
+F 3 "~" H 4900 3350 50  0001 C CNN
+	1    4900 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J7
+U 1 1 5C1A733C
+P 5700 3350
+F 0 "J7" V 5547 3398 50  0000 L CNN
+F 1 "PT2" V 5638 3398 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5700 3350 50  0001 C CNN
+F 3 "~" H 5700 3350 50  0001 C CNN
+	1    5700 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J8
+U 1 1 5C1A7380
+P 6500 3350
+F 0 "J8" V 6347 3398 50  0000 L CNN
+F 1 "PT3" V 6438 3398 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 6500 3350 50  0001 C CNN
+F 3 "~" H 6500 3350 50  0001 C CNN
+	1    6500 3350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3200 3150 3200 2750
+Wire Wire Line
+	3550 3150 3550 2750
+Wire Wire Line
+	3900 3150 3900 2750
+Wire Wire Line
+	4900 3150 4900 2800
+Wire Wire Line
+	5700 3150 5700 2800
+Wire Wire Line
+	6500 3150 6500 2800
+$Comp
+L Connector:Conn_01x01_Female J1
+U 1 1 5C1A8877
+P 2550 2350
+F 0 "J1" H 2444 2125 50  0000 C CNN
+F 1 "5V" H 2444 2216 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 2550 2350 50  0001 C CNN
+F 3 "~" H 2550 2350 50  0001 C CNN
+	1    2550 2350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2900 2350 2750 2350
+Connection ~ 2900 2350
+Wire Wire Line
+	3900 2350 4900 2350
+$EndSCHEMATC
